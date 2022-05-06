@@ -4,7 +4,7 @@
 
 # A Contrario multi-scale anomaly detection method for industrial quality inspection
 
-[Link to code](github.com/mtailanian/nfa_anomaly_detection)
+[Link to code](https://www.github.com/mtailanian/nfa_anomaly_detection)
 
 ### Book chapter (Still not uploaded)
 
