@@ -1,7 +1,6 @@
-<p align="center">
- 
 # A Contrario multi-scale anomaly detection method for industrial quality inspection
 
+[Link to code](github.com/mtailanian/nfa_anomaly_detection)
 
 ### Book chapter
 (Still not uploaded): 
@@ -11,8 +10,6 @@
 ### Conference
 [![Paper](https://img.shields.io/badge/ICMLA-2021-yellow.svg)](https://ieeexplore.ieee.org/abstract/document/9680125)
 [![Arxiv](https://img.shields.io/badge/arXiv-2110.02407-red.svg)](https://arxiv.org/abs/2110.02407)
-
-</p>
  
 ## Description   
 This is the official code that implements the chapter **A Contrario multi-scale 
