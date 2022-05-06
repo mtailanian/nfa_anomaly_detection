@@ -1,82 +1,74 @@
-### Deep learning project seed
-Use this seed to start new deep learning / ML projects.
-
-- Built in setup.py
-- Built in requirements
-- Examples with MNIST
-- Badges
-- Bibtex
-
-#### Goals  
-The goal of this seed is to structure ML paper-code the same so that work can easily be extended and replicated.   
-
-### DELETE EVERYTHING ABOVE FOR YOUR PROJECT  
- 
----
-
 <div align="center">    
  
 # A Contrario multi-scale anomaly detection method for industrial quality inspection
 
-[![Paper](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](https://www.nature.com/articles/nature14539)
-[![Conference](http://img.shields.io/badge/NeurIPS-2019-4b44ce.svg)](https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018)
-[![Conference](http://img.shields.io/badge/ICLR-2019-4b44ce.svg)](https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018)
-[![Conference](http://img.shields.io/badge/AnyConference-year-4b44ce.svg)](https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018)  
-<!--
-ARXIV   
-[![Paper](http://img.shields.io/badge/arxiv-math.co:1480.1111-B31B1B.svg)](https://www.nature.com/articles/nature14539)
--->
-![CI testing](https://github.com/PyTorchLightning/deep-learning-project-template/workflows/CI%20testing/badge.svg?branch=master&event=push)
 
+### Book chapter
+(Still not uploaded): 
+[![Book chapter](https://img.shields.io/badge/Book-Deep%20%20Learning%20Applications%2C%20Volume%204-orange.svg)]()
+[![Arxiv](https://img.shields.io/badge/Book%20arXiv-XXX.XXX-blue.svg)]()
 
-<!--  
-Conference   
--->   
+### Conference
+[![Paper](https://img.shields.io/badge/ICMLA-2021-yellow.svg)](https://ieeexplore.ieee.org/abstract/document/9680125)
+[![Arxiv](https://img.shields.io/badge/arXiv-2110.02407-red.svg)](https://arxiv.org/abs/2110.02407)
+
 </div>
  
 ## Description   
-What it does   
+This is the official code that implements the chapter **A Contrario multi-scale 
+anomaly detection method for industrial quality inspection**, of the book **Deep 
+Learning Applications, Volume 4**  
+
+The algorithm is completely unsupervised and intends to detect anomalies in textured images.
+
+### Result examples over MVTec-AD Dataset
+![text](assets/mvtec.png?raw=true)
+
+For each textured dataset in MVTec AD (carpet, grid, leather, tile, and
+wood), we show one image with each type of defect and their corresponding
+anomaly maps with the ResNet+RegionNFA method. The ground truth in is
+shown green, and the detection with log-NFA=0 in blue, superimposed to the
+original image.
+
+### Result examples over MVTec-AD Dataset
+![text](assets/results.png?raw=true)
 
 ## How to run   
-First, install dependencies   
+### Setup
+First, download repo, create virtual environment and install dependencies   
 ```bash
 # clone project   
 git clone https://github.com/YourGithubName/deep-learning-project-template
-
-# install project   
 cd deep-learning-project-template 
-pip install -e .   
+
+# Create virtualenv and activate it
+virtualenv -p python3 .env
+source .env/bin/activate
+pip install -r requirements.txt
+
+# install dependencies
 pip install -r requirements.txt
  ```   
- Next, navigate to any file and run it.   
+
+### Run
+ Next, run it using `main.py`, and passing the image path. 
+
+A test image is provided in `./images/test_image_01.jpg`
+
+For example:
  ```bash
-# module folder
-cd project
-
-# run module (example: mnist as your main contribution)   
-python lit_classifier_main.py    
+python main.py images/test_image_01.jpg
 ```
 
-## Imports
-This project is setup as a package which means you can now easily import any file into any other file like so:
-```python
-from project.datasets.mnist import mnist
-from project.lit_classifier_main import LitClassifier
-from pytorch_lightning import Trainer
+Other additional optional arguments:
 
-# model
-model = LitClassifier()
-
-# data
-train, val, test = mnist()
-
-# train
-trainer = Trainer()
-trainer.fit(model, train, val)
-
-# test using the best model!
-trainer.test(test_dataloaders=test)
-```
+| **Argument short name** | **Argument long name** |                                          **Description**                                           |     **Default value**     |
+|:-----------------------:|:----------------------:|:--------------------------------------------------------------------------------------------------:|:-------------------------:|
+|       image_path        |       image_path       |                                    Path of the image to process                                    | None (mandatory argument) |
+|          -thr           |  --log_nfa_threshold   |                    Threshold over the computed NFA map, for final segmentation.                    |             0             |
+|        -dist_thr        |  --distance_threshold  |       Threshold over the squared Mahalanobis distances, for computing the candidate regions.       |            0.5            |
+|           -s            |         --size         |                          Input size for ResNet. Must be divisible by 32.                           |            256            |
+|          -pca           |       --pca_std        | If float: the percentage of the variance to keep in PCA. If int: the number of components to keep. |            35             |
 
 ### Citation   
 ```
