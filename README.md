@@ -3,14 +3,8 @@
 # A Contrario multi-scale anomaly detection method for industrial quality inspection
 
 
-### Book chapter
-(Still not uploaded): 
-[![Book chapter](https://img.shields.io/badge/Book-Deep%20%20Learning%20Applications%2C%20Volume%204-orange.svg)]()
-[![Arxiv](https://img.shields.io/badge/Book%20arXiv-XXX.XXX-blue.svg)]()
-
-### Conference
-[![Paper](https://img.shields.io/badge/ICMLA-2021-yellow.svg)](https://ieeexplore.ieee.org/abstract/document/9680125)
 [![Arxiv](https://img.shields.io/badge/arXiv-2110.02407-red.svg)](https://arxiv.org/abs/2110.02407)
+
 
 </div>
  
