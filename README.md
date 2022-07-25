@@ -6,12 +6,14 @@
 
 [Link to code](https://www.github.com/mtailanian/nfa_anomaly_detection)
 
-### Book chapter (Still not uploaded)
+### Book chapter
 
-[![Book chapter](https://img.shields.io/badge/Book-Deep%20%20Learning%20Applications%2C%20Volume%204-orange.svg)]()
-[![Arxiv](https://img.shields.io/badge/Book%20arXiv-XXX.XXX-blue.svg)](https://arxiv.org/pdf/2205.11611.pdf)
+[![Arxiv](https://img.shields.io/badge/arXiv-2205.11611-blue.svg)](https://arxiv.org/pdf/2205.11611.pdf)
+
+[![Book chapter](https://img.shields.io/badge/Book-Deep%20%20Learning%20Applications%2C%20Volume%204-orange.svg)]() (Still not published)
 
 ### Conference paper
+
 [![Paper](https://img.shields.io/badge/ICMLA-2021-yellow.svg)](https://ieeexplore.ieee.org/abstract/document/9680125)
 [![Arxiv](https://img.shields.io/badge/arXiv-2110.02407-red.svg)](https://arxiv.org/abs/2110.02407)
  
