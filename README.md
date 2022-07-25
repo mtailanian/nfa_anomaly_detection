@@ -9,7 +9,7 @@
 ### Book chapter (Still not uploaded)
 
 [![Book chapter](https://img.shields.io/badge/Book-Deep%20%20Learning%20Applications%2C%20Volume%204-orange.svg)]()
-[![Arxiv](https://img.shields.io/badge/Book%20arXiv-XXX.XXX-blue.svg)]()
+[![Arxiv](https://img.shields.io/badge/Book%20arXiv-XXX.XXX-blue.svg)](https://arxiv.org/pdf/2205.11611.pdf)
 
 ### Conference paper
 [![Paper](https://img.shields.io/badge/ICMLA-2021-yellow.svg)](https://ieeexplore.ieee.org/abstract/document/9680125)
