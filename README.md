@@ -49,7 +49,6 @@ cd deep-learning-project-template
 # Create virtualenv and activate it
 virtualenv -p python3 .env
 source .env/bin/activate
-pip install -r requirements.txt
 
 # install dependencies
 pip install -r requirements.txt
@@ -75,15 +74,26 @@ Other additional optional arguments:
 |           -s            |         --size         |                          Input size for ResNet. Must be divisible by 32.                           |            256            |
 |          -pca           |       --pca_std        | If float: the percentage of the variance to keep in PCA. If int: the number of components to keep. |            35             |
 
-### Citation   
+### Citation
+
+Conference paper:
+
 ```
-@article{YourName,
-  title={Your Title},
-  author={Your team},
-  journal={Location},
-  year={Year}
+@inproceedings{tailanian2021multi,
+  title={A Multi-Scale A Contrario method for Unsupervised Image Anomaly Detection},
+  author={Tailani{\'a}n, Mat{\'\i}as and Mus{\'e}, Pablo and Pardo, {\'A}lvaro},
+  booktitle={2021 20th IEEE International Conference on Machine Learning and Applications (ICMLA)},
+  pages={179--184},
+  year={2021},
+  organization={IEEE}
 }
 ```   
+
+Book chapter:
+
+```
+To be published
+```
 
 Copyright and License
 ---------------------
