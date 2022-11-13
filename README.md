@@ -43,8 +43,8 @@ original image.
 First, download repo, create virtual environment and install dependencies   
 ```bash
 # clone project   
-git clone https://github.com/YourGithubName/deep-learning-project-template
-cd deep-learning-project-template 
+git clone https://github.com/mtailanian/nfa_anomaly_detection.git
+cd nfa_anomaly_detection
 
 # Create virtualenv and activate it
 virtualenv -p python3 .env
