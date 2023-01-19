@@ -10,7 +10,7 @@
 
 [![Arxiv](https://img.shields.io/badge/arXiv-2205.11611-blue.svg)](https://arxiv.org/pdf/2205.11611.pdf)
 
-[![Book chapter](https://img.shields.io/badge/Book-Deep%20%20Learning%20Applications%2C%20Volume%204-orange.svg)]() (Still not published)
+[![Book chapter](https://img.shields.io/badge/Book-Deep%20%20Learning%20Applications%2C%20Volume%204-orange.svg)](https://link.springer.com/chapter/10.1007/978-981-19-6153-3_8)
 
 ### Conference paper
 
@@ -92,7 +92,14 @@ Conference paper:
 Book chapter:
 
 ```
-To be published
+@incollection{tailanian2023contrario,
+  title={A Contrario multi-scale anomaly detection method for industrial quality inspection},
+  author={Tailanian, Mat{\'\i}as and Mus{\'e}, Pablo and Pardo, {\'A}lvaro},
+  booktitle={Deep Learning Applications, Volume 4},
+  pages={193--216},
+  year={2023},
+  publisher={Springer}
+}
 ```
 
 Copyright and License
